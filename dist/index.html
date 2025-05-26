@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentro programa de empoderamiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen">
+        <header>
+            <div class="container">
+                <a href="https://opcionlegal.org/index.php/es/" target="_blank">
+                    <img src="public/images/logool.png" alt="Opción Legal" class="header-logo">
+                </a>
+            </div>
+        </header>
+
+        <div class="title-banner">
+            <h1>Encuentro programa de empoderamiento comunitario y fortalecimiento a estructuras organizativas</h1>
+        </div>
+
+        <main class="container">
+            <!-- Agenda Section -->
+            <section class="section-container">
+                <div class="info-card">
+                    <h2>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Agenda del Evento
+                    </h2>
+                    <div class="rooms-grid">
+                        <div class="card" onclick="window.open('public/docs/agenda_evento.pdf', '_blank')">
+                            <div class="img">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="textBox">
+                                <div class="textContent">
+                                    <p class="h1">Programación del Evento</p>
+                                    <span class="span">Archivo disponible</span>
+                                </div>
+                                <p class="p">Cronograma detallado de actividades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Thursday Section -->
+            <section class="section-container">
+                <div class="info-card">
+                    <h2>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Jueves 28 de noviembre
+                    </h2>
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Actividades del día
+                    </h3>
+                    
+                    <div class="rooms-grid" id="thursday-grid"></div>
+                </div>
+            </section>
+
+            <!-- Friday Section -->
+            <section class="section-container">
+                <div class="info-card">
+                    <h2>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Viernes 29 de noviembre
+                    </h2>
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Actividades del día
+                    </h3>
+                    
+                    <div class="rooms-grid" id="friday-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-links">
+                    <a href="https://www.google.com/maps/dir//C.+50+%2370-124,+Laureles+-+Estadio,+Medellín,+Laureles,+Medellín,+Antioquia/@6.2590632,-75.6692834,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e44290fe24c7107:0xc3b35eed499b59e7!2m2!1d-75.5868815!2d6.2590696?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" target="_blank" class="footer-link">
+                        <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Ubicación del evento
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>© 2024. Corporación Opción Legal</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

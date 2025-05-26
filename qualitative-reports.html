@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Cualitativos - Programa Empoderamiento Comunitario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen">
+        <header>
+            <div class="container header-content">
+                <div class="header-left">
+                    <a href="index.html" class="back-button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        Volver
+                    </a>
+                </div>
+                <a href="https://opcionlegal.org/index.php/es/" target="_blank">
+                    <img src="public/images/logool_1.png" alt="Opción Legal" class="header-logo">
+                </a>
+            </div>
+        </header>
+
+        <div class="title-banner">
+            <div class="container title-container">
+                <h1>Solicitar Reporte de Información Cualitativa</h1>
+            </div>
+        </div>
+
+        <main class="container">
+            <section class="section-container">
+                <div class="info-card">
+                    <h2>Solicitar reporte de información cualitativa</h2>
+                    <p class="section-description">Seleccione la etapa del proceso para la cual necesita información cualitativa.</p>
+                    <div class="rooms-grid">
+                        <!-- Diagnosis Card -->
+                        <div class="card" onclick="sendEmail('activityempod@opcionlegal.org, empodmiguel1112003@gmail.com', 'Solicitud de Información Cualitativa - Diagnóstico', getDiagnosisTemplate())">
+                            <div class="img">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                </svg>
+                            </div>
+                            <div class="textBox">
+                                <div class="textContent">
+                                    <p class="h1">Diagnóstico</p>
+                                </div>
+                                <p class="p">Solicite información sobre testimonios, necesidades identificadas y problemáticas documentadas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Planning Card -->
+                        <div class="card" onclick="sendEmail('activityempod@opcionlegal.org, empodmiguel1112003@gmail.com', 'Solicitud de Información Cualitativa - Planeación', getPlanningTemplate())">
+                            <div class="img">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                </svg>
+                            </div>
+                            <div class="textBox">
+                                <div class="textContent">
+                                    <p class="h1">Planeación</p>
+                                </div>
+                                <p class="p">Acceda a información sobre objetivos establecidos y expectativas de la comunidad.</p>
+                            </div>
+                        </div>
+
+                        <!-- Implementation Card -->
+                        <div class="card" onclick="sendEmail('activityempod@opcionlegal.org, empodmiguel1112003@gmail.com', 'Solicitud de Información Cualitativa - Implementación', getImplementationTemplate())">
+                            <div class="img">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <div class="textBox">
+                                <div class="textContent">
+                                    <p class="h1">Implementación</p>
+                                </div>
+                                <p class="p">Obtenga información sobre procesos, adaptaciones y experiencias durante la ejecución.</p>
+                            </div>
+                        </div>
+
+                        <!-- Evaluation Card -->
+                        <div class="card" onclick="sendEmail('activityempod@opcionlegal.org, empodmiguel1112003@gmail.com', 'Solicitud de Información Cualitativa - Evaluación', getEvaluationTemplate())">
+                            <div class="img">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="textBox">
+                                <div class="textContent">
+                                    <p class="h1">Evaluación</p>
+                                </div>
+                                <p class="p">Acceda a información sobre impactos, aprendizajes y recomendaciones de la comunidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-info">
+                    <p>© 2024. Corporación Opción Legal</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

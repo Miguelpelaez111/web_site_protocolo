@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white/90 backdrop-blur rounded-xl flex items-center p-4 transition-all duration-300 cursor-pointer hover:bg-[#008EB3] hover:scale-[1.02] hover:shadow-lg;
+  }
+
+  .img {
+    @apply w-12 h-12 rounded-lg bg-gradient-to-br from-[#008EB3] to-[#006080] flex items-center justify-center;
+  }
+
+  .card:hover .img {
+    @apply from-white to-[#e6f7fc];
+  }
+
+  .card:hover .img svg {
+    @apply text-[#008EB3];
+  }
+
+  .textBox {
+    @apply ml-4 flex-1;
+  }
+
+  .textContent {
+    @apply flex justify-between items-center;
+  }
+
+  .h1 {
+    @apply text-lg font-semibold text-gray-800;
+  }
+
+  .card:hover .h1 {
+    @apply text-white;
+  }
+
+  .span {
+    @apply text-sm text-[#008EB3] font-medium;
+  }
+
+  .card:hover .span {
+    @apply text-white;
+  }
+
+  .p {
+    @apply text-sm text-gray-600 mt-1;
+  }
+
+  .card:hover .p {
+    @apply text-white/80;
+  }
+}
